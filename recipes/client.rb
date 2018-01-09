@@ -40,6 +40,7 @@ else
 end
 
 munin_server_ips << '127.0.0.1' unless munin_server_ips.include?('127.0.0.1')
+munin_server_ips.compact!
 
 package 'munin-node'
 
